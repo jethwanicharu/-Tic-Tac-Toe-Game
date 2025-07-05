@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link src="app.js" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <!-- Message when game ends -->
+    <div class="msg-container hide">
+      <p id="msg">Winner</p>
+      <img id="winner-image" src="winner.jpg" alt="Trophy" class="trophy-image hide" />
+      <button id="new-btn">New Game</button>
+    </div>
+
+    <!-- Main Game Section -->
+    <main>
+      <h1>Tic Tac Toe</h1>
+
+      <!-- Turn Indicator -->
+      <h2 id="turn-indicator">Turn: X</h2>
+
+      <!-- Scoreboard -->
+      <div class="scoreboard">
+        <p>X Wins: <span id="x-score">0</span></p>
+        <p>O Wins: <span id="o-score">0</span></p>
+      </div>
+
+      <!-- Game Grid -->
+      <div class="container">
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+      </div>
+
+      <!-- Reset Button -->
+      <button id="reset-btn">Reset Game</button>
+ <canvas id="confetti"></canvas>
+
+    </main>
+
+    <!-- Sound Effects (optional, place .mp3 files in same folder) -->
+    <audio id="click-sound" src="click.mp3"></audio>
+    <audio id="win-sound" src="win.mp3"></audio>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>
