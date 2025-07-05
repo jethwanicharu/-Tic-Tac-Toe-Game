@@ -31,4 +31,5 @@ A simple and fun 2-player **Tic Tac Toe** game built using **HTML**, **CSS**, an
 
 1. **Clone the repository:**
    ```bash
-  🔗 https://github.com/jethwanicharu/-Tic-Tac-Toe-Game
+   git clone https://github.com/jethwanicharu/-Tic-Tac-Toe-Game
+   cd tic-tac-toe
